@@ -2,6 +2,8 @@ import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Hello from "./components/Hello"
 import Home from "./components/Home"
+import Services from './components/Services'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Hero />
       <Hello />
       <Home />
+      <Services />
+      {/* <Footer /> */}
     </main>
   );
 }

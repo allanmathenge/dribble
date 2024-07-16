@@ -7,7 +7,7 @@ import { MdErrorOutline } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <section className="sm:max-w-[64%] m-auto max-w-full flex flex-col gap-4">
+    <section className="sm:max-w-[64%] m-auto max-w-full flex flex-col gap-4 mx-2">
         <h1 className="text-base font-semibold">Beverage: Bacardi Breezer</h1>
         <div className="flex justify-between items-end">
 
