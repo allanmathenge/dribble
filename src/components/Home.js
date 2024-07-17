@@ -11,26 +11,31 @@ const Home = () => {
       try {
         fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a').then((res) =>{ return res.json()}).then((data) => {
           setProducts(data.drinks || [])
+          //console.log(products)
         })
         // if(!res.ok) throw new Error('Couldn\'t find products')
       } catch (error) {
         console.log(error.message)
       }
-    })
-        
-    const handleSearch = async () => {
-      
-    if (query.trim()) {
+    }, [])
 
+    // const results = json.filter((cocktail) => {
+    // return cocktail.strDrink.toLowerCase().includes(query.toLowerCase())
+    // https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
+    //   })
+
+  const handleSearch = (query) => {
+
+    if (query) {
       try {
-              
-        fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${query}`).then((res) =>{ return res.json()}).then((data) => {
-          setProducts(data.drinks)
-          console.log(products)
+        fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita').then((res) => { return res.json()}).then((data) => {
+          setProducts(data.drinks || [])
         })
       } catch (error) {
         console.log(error.message)
       }
+    } else {
+      return
     }
   }
 
@@ -48,7 +53,7 @@ const Home = () => {
     />
 
     <button
-      onClick={handleSearch}
+      onClick={() => handleSearch(query)}
       className="text-lg"
     ><CiSearch /></button>
     </div>

@@ -3,8 +3,8 @@ import { FaTwitter, FaFacebookSquare, FaInstagram, FaPinterest } from "react-ico
 
 const Footer = () => {
     return (
-    <footer className="h-16 w-[80%]">
-        <section className="flex justify-between items-center">
+    <footer className="h-16 w-[80%] px-3 text-sm">
+        <section className="flex flex-wrap justify-between items-center text-center">
             <img src={Logo} className="w-16" alt="dribble logo" />
             <span>For designers</span>
             <span>Hire talent</span>
@@ -15,7 +15,7 @@ const Footer = () => {
             <span>Careers</span>
             <span>Support</span>
 
-            <p className="flex justify-center gap-2 text-sm">
+            <p className="flex gap-2">
                 <span><FaTwitter /></span>
                 <span><FaFacebookSquare /></span>
                 <span><FaInstagram /></span>
@@ -23,15 +23,15 @@ const Footer = () => {
             </p>
         </section>
 
-        <section className="flex justify-between font-[10px] text-gray-500 py-8">
-            <div className="flex gap-2">
+        <section className="flex flex-wrap justify-between font-[10px] text-gray-500 py-8">
+            <div className="flex justify-center items-center gap-2 flex-wrap text-center">
                 <p>&copy;2024 Dribbble</p>
                 <p>Terms</p>
                 <p>Privacy</p>
                 <p>Cookies</p>
             </div>
             
-            <div className="flex justify-between gap-2">
+            <div className="flex justify-center items-center flex-wrap text-center gap-2">
                 <p>Jobs</p>
                 <p>Designers</p>
                 <p>Freelancers</p>

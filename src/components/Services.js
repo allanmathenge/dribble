@@ -26,7 +26,7 @@ const Services = () => {
                 <p>View profile</p>
             </div>
 
-            <div className="flex gap-6 flex-wrap pb-12 justify-center">
+            <div className="flex gap-6 flex-wrap pb-12 justify-center py-4">
                 <div className="min-w-40 pb-3 lg:max-w-48">
                     <img src={Invoces} alt="Web invoices" className="w-full" />
                     <div className="-mt-12 flex hover:bg-slate-400 justify-between cursor-pointer px-3">
@@ -49,7 +49,7 @@ const Services = () => {
                     </div>
                 </div>
 
-                <div className="min-w-40 lg:max-w-48">
+                <div className="min-w-40 pb-3 lg:max-w-48">
                     <img src={Music} alt="Web invoices" className="w-full" />
                     <div className="-mt-12 flex hover:bg-slate-400 justify-between cursor-pointer px-3">
                         <p className="font-bold  text-white">Website invoces</p>
